@@ -4,7 +4,7 @@ import Logo from "../../Asset/Images/colan-logoo.png";
 
 const Index = () => {
   return (
-    <div>
+    <>
       <div className="app">
         <header className="app-header">
           <div className="app-header-logo">
@@ -363,7 +363,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
