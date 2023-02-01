@@ -1,0 +1,247 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+.card {
+  margin: auto;
+  margin-top: 40px;
+  width: 338px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  box-shadow: -2px 8px 23px;
+  border-radius: 6px;
+}
+.card img {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-width: 54%;
+  height: auto;
+}
+
+.textt {
+  /* border-top: 1px solid black; */
+  padding-top: 10px;
+}
+
+.pass {
+  padding-top: 45px;
+}
+
+input[type="text"] {
+  height: 32px;
+  width: 300px;
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+  font-size: 14px;
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 6px;
+  padding-left: 15px;
+  -webkit-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+}
+
+input[type="password"] {
+  height: 32px;
+  width: 300px;
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+  font-size: 14px;
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 6px;
+  padding-left: 15px;
+  -webkit-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+}
+
+.butn {
+  padding-top: 40px;
+}
+#butn1 {
+  border-radius: 12px;
+  border-radius: 7px;
+  height: 44px;
+  width: 300px;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+#butn1:hover {
+  color: black;
+}
+/* background only  */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 411px) and (max-width: 450px) {
+  .card {
+    width: 280px;
+  }
+  input[type="text"] {
+    width: 260px;
+  }
+  input[type="password"] {
+    width: 260px;
+  }
+  #butn1 {
+    width: 260px;
+  }
+}
+@media (min-width: 368px) and (max-width: 410px) {
+  .card {
+    width: 250px;
+  }
+  input[type="text"] {
+    width: 230px;
+  }
+  input[type="password"] {
+    width: 230px;
+  }
+  #butn1 {
+    width: 230px;
+  }
+}
+@media (min-width: 320px) and (max-width: 366px) {
+  .card {
+    width: 250px;
+  }
+  input[type="text"] {
+    width: 230px;
+  }
+  input[type="password"] {
+    width: 230px;
+  }
+  #butn1 {
+    width: 230px;
+  }
+}
+@media (min-width: 250px) and (max-width: 319px) {
+  .card {
+    width: 185px;
+  }
+  .card img {
+    max-width: 80%;
+  }
+  input[type="text"] {
+    width: 170px;
+    font-size: 12px;
+  }
+  input[type="password"] {
+    width: 170px;
+    font-size: 12px;
+  }
+  #butn1 {
+    width: 170px;
+  }
+}
+
+@media (min-width: 210px) and (max-width: 249px) {
+  .card {
+    width: 120px;
+  }
+  .card img {
+    max-width: 80%;
+  }
+  input[type="text"] {
+    width: 120px;
+    font-size: 11px;
+    padding: 0px;
+  }
+  input[type="password"] {
+    width: 120px;
+    font-size: 11px;
+    padding: 0px;
+  }
+  #butn1 {
+    width: 100px;
+    font-size: 11px;
+  }
+  #sp1 {
+    font-size: 11px;
+    padding: 0px;
+  }
+  #sp2 {
+    font-size: 11px;
+    padding: 0px;
+  }
+}
