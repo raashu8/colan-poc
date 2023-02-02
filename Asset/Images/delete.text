@@ -1,0 +1,2376 @@
+import Image from "next/image";
+import React from "react";
+import Logo from "../../Asset/Images/colan-logoo.png";
+
+const Index = () => {
+  return (
+    <div>
+      <div className="app">
+        <header className="app-header">
+          <div className="app-header-logo">
+            <div className="logo">
+              <span className="logo-icon">
+                <Image src={Logo} width={150} height={50} alt="" />
+
+                {/* <img src={Logo} /> */}
+              </span>
+              <h1 className="logo-title">
+                <span>Colan Infotech</span>
+              </h1>
+            </div>
+          </div>
+          <div className="app-header-navigation">
+            <div className="tabs">
+              {/* <a href="#"> Overview </a> */}
+              <a href="#" className="active">
+                {" "}
+                Excel {" "}
+              </a>
+              {/* <a href="#"> Cards </a>
+              <a href="#"> Account </a>
+              <a href="#"> System </a>
+              <a href="#"> Business </a> */}
+            </div>
+          </div>
+          <div className="app-header-actions">
+            <button className="user-profile">
+              <span>Matheo Peterson</span>
+              <span>
+                <img
+                  style={{ display: "block", maxWidth: "100%" }}
+                  src="https://assets.codepen.io/285131/almeria-avatar.jpeg"
+                />
+              </span>
+            </button>
+            <div className="app-header-actions-buttons">
+              <button className="icon-button large">
+                <i className="ph-magnifying-glass"></i>
+              </button>
+              <button className="icon-button large">
+                <i className="ph-bell"></i>
+              </button>
+            </div>
+          </div>
+          <div className="app-header-mobile">
+            <button className="icon-button large">
+              <i className="ph-list"></i>
+            </button>
+          </div>
+        </header>
+        <div className="app-body">
+          <div className="app-body-navigation">
+            <nav className="navigation">
+              <a href="#">
+                <i className="ph-browsers"></i>
+                <span>Dashboard</span>
+              </a>
+              <a href="#">
+                <i className="ph-check-square"></i>
+                <span>Scheduled</span>
+              </a>
+              <a href="#">
+                <i className="ph-swap"></i>
+                <span>Transfers</span>
+              </a>
+              <a href="#">
+                <i className="ph-file-text"></i>
+                <span>Templates</span>
+              </a>
+              <a href="#">
+                <i className="ph-globe"></i>
+                <span>SWIFT</span>
+              </a>
+              <a href="#">
+                <i className="ph-clipboard-text"></i>
+                <span>Exchange</span>
+              </a>
+            </nav>
+            <footer className="footer">
+              <h1>
+                Almeria<small>©</small>
+              </h1>
+              <div>
+                Almeria ©<br />
+                All Rights Reserved 2021
+              </div>
+            </footer>
+          </div>
+          <div className="app-body-main-content">
+            <section className="service-section">
+              <h2>Service</h2>
+              <div className="service-section-header">
+                <div className="search-field">
+                  <i className="ph-magnifying-glass"></i>
+                  <input type="text" placeholder="Account number" />
+                </div>
+                <div className="dropdown-field">
+                  <select>
+                    <option>Home</option>
+                    <option>Work</option>
+                  </select>
+                  <i className="ph-caret-down"></i>
+                </div>
+                <button className="flat-button">Search</button>
+              </div>
+              <div className="mobile-only">
+                <button className="flat-button">Toggle search</button>
+              </div>
+              <div className="tiles">
+                <article className="tile">
+                  <div className="tile-header">
+                    <i className="ph-lightning-light"></i>
+                    <h3>
+                      <span>Electricity</span>
+                      <span>UrkEnergo LTD.</span>
+                    </h3>
+                  </div>
+                  <a href="#">
+                    <span>Go to service</span>
+                    <span className="icon-button">
+                      <i className="ph-caret-right-bold"></i>
+                    </span>
+                  </a>
+                </article>
+                <article className="tile">
+                  <div className="tile-header">
+                    <i className="ph-fire-simple-light"></i>
+                    <h3>
+                      <span>Heating Gas</span>
+                      <span>Gazprom UA</span>
+                    </h3>
+                  </div>
+                  <a href="#">
+                    <span>Go to service</span>
+                    <span className="icon-button">
+                      <i className="ph-caret-right-bold"></i>
+                    </span>
+                  </a>
+                </article>
+                <article className="tile">
+                  <div className="tile-header">
+                    <i className="ph-file-light"></i>
+                    <h3>
+                      <span>Tax online</span>
+                      <span>Kharkov 62 str.</span>
+                    </h3>
+                  </div>
+                  <a href="#">
+                    <span>Go to service</span>
+                    <span className="icon-button">
+                      <i className="ph-caret-right-bold"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+              <div className="service-section-footer">
+                <p>
+                  Services are paid according to the current state of the
+                  currency and tariff.
+                </p>
+              </div>
+            </section>
+            <section className="transfer-section">
+              <div className="transfer-section-header">
+                <h2>Latest transfers</h2>
+                <div className="filter-options">
+                  <p>Filter selected: more than 100 $</p>
+                  <button className="icon-button">
+                    <i className="ph-funnel"></i>
+                  </button>
+                  <button className="icon-button">
+                    <i className="ph-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div className="transfers">
+                <div className="transfer">
+                  <div className="transfer-logo">
+                    <img src="https://assets.codepen.io/285131/apple.svg" />
+                  </div>
+                  <dl className="transfer-details">
+                    <div>
+                      <dt>Apple Inc.</dt>
+                      <dd>Apple ID Payment</dd>
+                    </div>
+                    <div>
+                      <dt>4012</dt>
+                      <dd>Last four digits</dd>
+                    </div>
+                    <div>
+                      <dt>28 Oct. 21</dt>
+                      <dd>Date payment</dd>
+                    </div>
+                  </dl>
+                  <div className="transfer-number">- $ 550</div>
+                </div>
+                <div className="transfer">
+                  <div className="transfer-logo">
+                    <img src="https://assets.codepen.io/285131/pinterest.svg" />
+                  </div>
+                  <dl className="transfer-details">
+                    <div>
+                      <dt>Pinterest</dt>
+                      <dd>2 year subscription</dd>
+                    </div>
+                    <div>
+                      <dt>5214</dt>
+                      <dd>Last four digits</dd>
+                    </div>
+                    <div>
+                      <dt>26 Oct. 21</dt>
+                      <dd>Date payment</dd>
+                    </div>
+                  </dl>
+                  <div className="transfer-number">- $ 120</div>
+                </div>
+                <div className="transfer">
+                  <div className="transfer-logo">
+                    <img src="https://assets.codepen.io/285131/warner-bros.svg" />
+                  </div>
+                  <dl className="transfer-details">
+                    <div>
+                      <dt>Warner Bros.</dt>
+                      <dd>Cinema</dd>
+                    </div>
+                    <div>
+                      <dt>2228</dt>
+                      <dd>Last four digits</dd>
+                    </div>
+                    <div>
+                      <dt>22 Oct. 21</dt>
+                      <dd>Date payment</dd>
+                    </div>
+                  </dl>
+                  <div className="transfer-number">- $ 70</div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div className="app-body-sidebar">
+            <section className="payment-section">
+              <h2>New Payment</h2>
+              <div className="payment-section-header">
+                <p>Choose a card to transfer money</p>
+                <div>
+                  <button className="card-button mastercard">
+                    <svg
+                      width="2001"
+                      height="1237"
+                      viewBox="0 0 2001 1237"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="a624784f2834e21c94a1c0c9a58bbbaa">
+                        <path
+                          id="7869b07bea546aa59a5ee138adbcfd5a"
+                          d="M1270.57 1104.15H729.71V132.15H1270.58L1270.57 1104.15Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          id="b54e3ab4d7044a9f288082bc6b864ae6"
+                          d="M764 618.17C764 421 856.32 245.36 1000.08 132.17C891.261 46.3647 756.669 -0.204758 618.09 9.6031e-07C276.72 9.6031e-07 0 276.76 0 618.17C0 959.58 276.72 1236.34 618.09 1236.34C756.672 1236.55 891.268 1189.98 1000.09 1104.17C856.34 991 764 815.35 764 618.17Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          id="67f94b4d1b83252a6619ed6e0cc0a3a1"
+                          d="M2000.25 618.17C2000.25 959.58 1723.53 1236.34 1382.16 1236.34C1243.56 1236.54 1108.95 1189.97 1000.11 1104.17C1143.91 990.98 1236.23 815.35 1236.23 618.17C1236.23 420.99 1143.91 245.36 1000.11 132.17C1108.95 46.3673 1243.56 -0.201169 1382.15 -2.24915e-05C1723.52 -2.24915e-05 2000.24 276.76 2000.24 618.17"
+                          fill="currentColor"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <button className="card-button visa active">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="2500"
+                      height="2500"
+                      viewBox="0 0 141.732 141.732"
+                    >
+                      <g fill="currentColor">
+                        <path d="M62.935 89.571h-9.733l6.083-37.384h9.734zM45.014 52.187L35.735 77.9l-1.098-5.537.001.002-3.275-16.812s-.396-3.366-4.617-3.366h-15.34l-.18.633s4.691.976 10.181 4.273l8.456 32.479h10.141l15.485-37.385H45.014zM121.569 89.571h8.937l-7.792-37.385h-7.824c-3.613 0-4.493 2.786-4.493 2.786L95.881 89.571h10.146l2.029-5.553h12.373l1.14 5.553zm-10.71-13.224l5.114-13.99 2.877 13.99h-7.991zM96.642 61.177l1.389-8.028s-4.286-1.63-8.754-1.63c-4.83 0-16.3 2.111-16.3 12.376 0 9.658 13.462 9.778 13.462 14.851s-12.075 4.164-16.06.965l-1.447 8.394s4.346 2.111 10.986 2.111c6.642 0 16.662-3.439 16.662-12.799 0-9.72-13.583-10.625-13.583-14.851.001-4.227 9.48-3.684 13.645-1.389z" />
+                      </g>
+                      <path
+                        d="M34.638 72.364l-3.275-16.812s-.396-3.366-4.617-3.366h-15.34l-.18.633s7.373 1.528 14.445 7.253c6.762 5.472 8.967 12.292 8.967 12.292z"
+                        fill="currentColor"
+                      />
+                      <path fill="none" d="M0 0h141.732v141.732H0z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="payments">
+                <div className="payment">
+                  <div className="card green">
+                    <span>01/22</span>
+                    <span> •••• 4012 </span>
+                  </div>
+                  <div className="payment-details">
+                    <h3>Internet</h3>
+                    <div>
+                      <span>$ 2,110</span>
+                      <button className="icon-button">
+                        <i className="ph-caret-right-bold"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="payment">
+                  <div className="card olive">
+                    <span>12/23</span>
+                    <span> •••• 2228 </span>
+                  </div>
+                  <div className="payment-details">
+                    <h3>Universal</h3>
+                    <div>
+                      <span>$ 5,621</span>
+                      <button className="icon-button">
+                        <i className="ph-caret-right-bold"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="payment">
+                  <div className="card gray">
+                    <span>03/22</span>
+                    <span> •••• 5214 </span>
+                  </div>
+                  <div className="payment-details">
+                    <h3>Gold</h3>
+                    <div>
+                      <span>$ 3,473</span>
+                      <button className="icon-button">
+                        <i className="ph-caret-right-bold"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="faq">
+                <p>Most frequently asked questions</p>
+                <div>
+                  <label>Question</label>
+                  <input type="text" placeholder="Type here" />
+                </div>
+              </div>
+              <div className="payment-section-footer">
+                <button className="save-button">Save</button>
+                <button className="settings-button">
+                  <i className="ph-gear"></i>
+                  <span>More settings</span>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Index;
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  line-height: 1.5;
+  /* min-height: 100vh; */
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #1f1f1f;
+  color: var(--c-text-primary);
+  /* display: flex; */
+  /* padding-top: 3vw; */
+  padding-bottom: 3vw;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+.card {
+  margin: auto;
+  margin-top: 40px;
+  width: 338px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  box-shadow: -2px 8px 23px;
+  border-radius: 6px;
+}
+.card img {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-width: 54%;
+  height: auto;
+}
+
+.textt {
+  /* border-top: 1px solid black; */
+  padding-top: 10px;
+}
+
+.pass {
+  padding-top: 45px;
+}
+
+input[type="text"] {
+  height: 32px;
+  width: 300px;
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+  font-size: 14px;
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 6px;
+  padding-left: 15px;
+  -webkit-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+}
+
+input[type="password"] {
+  height: 32px;
+  width: 300px;
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+  font-size: 14px;
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 6px;
+  padding-left: 15px;
+  -webkit-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+  box-shadow: 1px 2px 36px -10px rgba(117, 117, 117, 1);
+}
+
+.butn {
+  padding-top: 40px;
+}
+#butn1 {
+  border-radius: 12px;
+  border-radius: 7px;
+  height: 44px;
+  width: 300px;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+#butn1:hover {
+  color: black;
+}
+/* background only  */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 411px) and (max-width: 450px) {
+  .card {
+    width: 280px;
+  }
+  input[type="text"] {
+    width: 260px;
+  }
+  input[type="password"] {
+    width: 260px;
+  }
+  #butn1 {
+    width: 260px;
+  }
+}
+@media (min-width: 368px) and (max-width: 410px) {
+  .card {
+    width: 250px;
+  }
+  input[type="text"] {
+    width: 230px;
+  }
+  input[type="password"] {
+    width: 230px;
+  }
+  #butn1 {
+    width: 230px;
+  }
+}
+@media (min-width: 320px) and (max-width: 366px) {
+  .card {
+    width: 250px;
+  }
+  input[type="text"] {
+    width: 230px;
+  }
+  input[type="password"] {
+    width: 230px;
+  }
+  #butn1 {
+    width: 230px;
+  }
+}
+@media (min-width: 250px) and (max-width: 319px) {
+  .card {
+    width: 185px;
+  }
+  .card img {
+    max-width: 80%;
+  }
+  input[type="text"] {
+    width: 170px;
+    font-size: 12px;
+  }
+  input[type="password"] {
+    width: 170px;
+    font-size: 12px;
+  }
+  #butn1 {
+    width: 170px;
+  }
+}
+
+@media (min-width: 210px) and (max-width: 249px) {
+  .card {
+    width: 120px;
+  }
+  .card img {
+    max-width: 80%;
+  }
+  input[type="text"] {
+    width: 120px;
+    font-size: 11px;
+    padding: 0px;
+  }
+  input[type="password"] {
+    width: 120px;
+    font-size: 11px;
+    padding: 0px;
+  }
+  #butn1 {
+    width: 100px;
+    font-size: 11px;
+  }
+  #sp1 {
+    font-size: 11px;
+    padding: 0px;
+  }
+  #sp2 {
+    font-size: 11px;
+    padding: 0px;
+  }
+}
+/* MY CSS ENDS HERE OTHER ONE STARTS */
+
+:root {
+  --c-gray-900: #000000;
+  --c-gray-800: #1f1f1f;
+  --c-gray-700: #2e2e2e;
+  --c-gray-600: #313131;
+  --c-gray-500: #969593;
+  --c-gray-400: #a6a6a6;
+  --c-gray-300: #bdbbb7;
+  --c-gray-200: #f1f1f1;
+  --c-gray-100: #ffffff;
+  --c-green-500: #45ffbc;
+  --c-olive-500: #e3ffa8;
+  --c-white: var(--c-gray-100);
+  --c-text-primary: var(--c-gray-100);
+  --c-text-secondary: var(--c-gray-200);
+  --c-text-tertiary: var(--c-gray-500);
+}
+/* 
+img {
+  display: block;
+  max-width: 100%;
+} */
+
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.responsive-wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app {
+  /* min-height: 80vh; */
+  /* width: 95%; */
+  /* max-width: 1600px; */
+  background-color: var(--c-gray-800);
+  padding: 2vw 2vw 6vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: grid;
+  grid-template-columns:
+    minmax(-webkit-min-content, 175px) minmax(-webkit-max-content, 1fr)
+    minmax(-webkit-max-content, 400px);
+  grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(
+      max-content,
+      400px
+    );
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+  align-items: flex-end;
+}
+@media (max-width: 1200px) {
+  .app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c-gray-600);
+  }
+}
+
+@media (max-width: 1200px) {
+  .app-header-navigation {
+    display: none;
+  }
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .app-header-actions {
+    display: none;
+  }
+}
+
+.app-header-actions-buttons {
+  display: flex;
+  border-left: 1px solid var(--c-gray-600);
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+.app-header-actions-buttons > * + * {
+  margin-left: 1rem;
+}
+
+.app-header-mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .app-header-mobile {
+    display: flex;
+  }
+}
+
+.app-body {
+  height: 100%;
+  display: grid;
+  grid-template-columns:
+    minmax(-webkit-min-content, 175px) minmax(-webkit-max-content, 1fr)
+    minmax(-webkit-min-content, 400px);
+  grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(
+      min-content,
+      400px
+    );
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+  padding-top: 2.5rem;
+}
+@media (max-width: 1200px) {
+  .app-body {
+    grid-template-columns: 1fr;
+  }
+  .app-body > * {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.app-body-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .app-body-navigation {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: auto;
+}
+.footer h1 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  display: flex;
+  align-items: flex-start;
+}
+.footer h1 small {
+  font-size: 0.5em;
+  margin-left: 0.25em;
+}
+.footer div {
+  border-top: 1px solid var(--c-gray-600);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--c-text-tertiary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid var(--c-gray-600);
+}
+@media (max-width: 1200px) {
+  .logo {
+    border-bottom: 0;
+  }
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  margin-left: 0.75rem;
+}
+.logo-title span:first-child {
+  color: var(--c-text-primary);
+}
+.logo-title span:last-child {
+  color: var(--c-text-tertiary);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--c-text-tertiary);
+}
+.navigation a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+.navigation a * {
+  transition: 0.25s ease;
+}
+.navigation a i {
+  margin-right: 0.75rem;
+  font-size: 1.25em;
+  flex-shrink: 0;
+}
+.navigation a + a {
+  margin-top: 1.25rem;
+}
+.navigation a:hover,
+.navigation a:focus {
+  transform: translateX(4px);
+  color: var(--c-text-primary);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  color: var(--c-text-tertiary);
+  border-bottom: 1px solid var(--c-gray-600);
+}
+.tabs a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  display: inline-flex;
+  transition: 0.25s ease;
+}
+.tabs a.active,
+.tabs a:hover,
+.tabs a:focus {
+  color: var(--c-text-primary);
+  border-color: var(--c-text-primary);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--c-text-tertiary);
+  transition: 0.25s ease;
+}
+.user-profile:hover,
+.user-profile:focus {
+  color: var(--c-text-primary);
+}
+.user-profile:hover span:last-child,
+.user-profile:focus span:last-child {
+  box-shadow: 0 0 0 4px var(--c-gray-800), 0 0 0 5px var(--c-text-tertiary);
+}
+.user-profile span:first-child {
+  display: flex;
+  font-size: 1.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--c-gray-600);
+  font-weight: 300;
+}
+.user-profile span:last-child {
+  transition: 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+}
+
+.icon-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+  border: 1px solid var(--c-gray-500);
+  color: var(--c-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+  flex-shrink: 0;
+}
+.icon-button.large {
+  width: 42px;
+  height: 42px;
+  font-size: 1.25em;
+}
+.icon-button i {
+  transition: 0.25s ease;
+}
+.icon-button:hover,
+.icon-button:focus {
+  background-color: var(--c-gray-600);
+  box-shadow: 0 0 0 4px var(--c-gray-800), 0 0 0 5px var(--c-text-tertiary);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-top: 1.25rem;
+}
+@media (max-width: 700px) {
+  .tiles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.tile {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--c-olive-500);
+  color: var(--c-gray-900);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.25s ease;
+}
+.tile:hover {
+  transform: translateY(-5px);
+}
+.tile:focus-within {
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-olive-500);
+}
+.tile:nth-child(2) {
+  background-color: var(--c-green-500);
+}
+.tile:nth-child(2):focus-within {
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-green-500);
+}
+.tile:nth-child(3) {
+  background-color: var(--c-gray-300);
+}
+.tile:nth-child(3):focus-within {
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
+}
+.tile a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.tile a .icon-button {
+  color: inherit;
+  border-color: inherit;
+}
+.tile a .icon-button:hover,
+.tile a .icon-button:focus {
+  background-color: transparent;
+}
+.tile a .icon-button:hover i,
+.tile a .icon-button:focus i {
+  transform: none;
+}
+.tile a:focus {
+  box-shadow: none;
+}
+.tile a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tile-header {
+  display: flex;
+  align-items: center;
+}
+.tile-header i {
+  font-size: 2.5em;
+}
+.tile-header h3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.375;
+  margin-left: 0.5rem;
+}
+.tile-header h3 span:first-child {
+  font-weight: 600;
+}
+.tile-header h3 span:last-child {
+  font-size: 0.825em;
+  font-weight: 200;
+}
+
+.service-section > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.service-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-section-header > * + * {
+  margin-left: 1.25rem;
+}
+@media (max-width: 1000px) {
+  .service-section-header {
+    display: none;
+  }
+}
+
+.service-section-footer {
+  color: var(--c-text-tertiary);
+  margin-top: 1rem;
+}
+
+.search-field {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+.search-field input {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--c-gray-600);
+  background-color: transparent;
+  padding-left: 1.5rem;
+}
+.search-field i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-field {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+.dropdown-field select {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--c-gray-600);
+  background-color: transparent;
+  padding-right: 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: var(--c-text-tertiary);
+  width: 100%;
+}
+.dropdown-field i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flat-button {
+  border-radius: 6px;
+  background-color: var(--c-gray-700);
+  padding: 0.5em 1.5em;
+  border: 0;
+  color: var(--c-text-secondary);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.flat-button:hover,
+.flat-button:focus {
+  background-color: var(--c-gray-600);
+}
+
+.mobile-only {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .mobile-only {
+    display: inline-flex;
+  }
+}
+
+.transfer-section {
+  margin-top: 2.5rem;
+}
+
+.transfer-section-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--c-gray-600);
+}
+.transfer-section-header h2 {
+  font-size: 1.5rem;
+}
+
+.payments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+}
+.payment + * {
+  margin-top: 1rem;
+}
+
+.card {
+  width: 125px;
+  padding: 0.375rem;
+  aspect-ratio: 3/2;
+  flex-shrink: 0;
+  border-radius: 6px;
+  color: var(--c-gray-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.card.green {
+  background-color: var(--c-green-500);
+}
+.card.olive {
+  background-color: var(--c-olive-500);
+}
+.card.gray {
+  background-color: var(--c-gray-300);
+}
+.card span:last-child {
+  align-self: flex-end;
+}
+
+.payment-details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+.payment-details h3 {
+  font-size: 1rem;
+  color: var(--c-text-tertiary);
+}
+.payment-details div {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-top: 1px solid var(--c-gray-600);
+  border-bottom: 1px solid var(--c-gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.payment-details div span {
+  font-size: 1.5rem;
+}
+
+.filter-options {
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--c-gray-600);
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.filter-options p {
+  color: var(--c-text-tertiary);
+  font-size: 0.875rem;
+}
+.filter-options p + * {
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+@media (max-width: 1000px) {
+  .filter-options p {
+    display: none;
+  }
+}
+
+.transfers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.transfer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 0.875rem;
+}
+@media (max-width: 1000px) {
+  .transfer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.transfer + * {
+  margin-top: 2rem;
+}
+
+.transfer-logo {
+  background-color: var(--c-gray-200);
+  border-radius: 4px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transfer-logo img {
+  width: 45%;
+}
+
+.transfer-details {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+@media (max-width: 1000px) {
+  .transfer-details {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+.transfer-details div {
+  width: calc(100% / 3 - 1rem);
+}
+@media (max-width: 1000px) {
+  .transfer-details div {
+    width: 100%;
+  }
+}
+.transfer-details div + div {
+  margin-left: 1rem;
+}
+@media (max-width: 1000px) {
+  .transfer-details div + div {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+.transfer-details dd {
+  color: var(--c-text-tertiary);
+  margin-top: 2px;
+}
+
+.transfer-number {
+  margin-left: 2rem;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1000px) {
+  .transfer-number {
+    margin-left: 0;
+    margin-top: 1.25rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.payment-section > h2 {
+  font-size: 1.5rem;
+}
+
+.payment-section-header {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.payment-section-header p {
+  color: var(--c-text-tertiary);
+  font-size: 0.875rem;
+}
+.payment-section-header div {
+  padding-left: 1rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.payment-section-header div > * + * {
+  margin-left: 0.5rem;
+}
+
+.card-button {
+  display: flex;
+  width: 50px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: transparent;
+  transition: 0.25s ease;
+  border-radius: 4px;
+  border: 2px solid var(--c-gray-600);
+  color: var(--c-text-primary);
+  cursor: pointer;
+}
+.card-button.mastercard svg {
+  max-height: 15px;
+}
+.card-button:focus,
+.card-button:hover,
+.card-button.active {
+  color: var(--c-gray-800);
+  background-color: var(--c-white);
+  border-color: var(--c-white);
+}
+
+.faq {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.faq p {
+  color: var(--c-text-tertiary);
+  font-size: 0.875rem;
+}
+.faq div {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-top: 1px solid var(--c-gray-600);
+  border-bottom: 1px solid var(--c-gray-600);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+.faq div label {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid var(--c-gray-600);
+}
+.faq div input {
+  border: 0;
+  background-color: transparent;
+  padding: 0.25em 0;
+  width: 100%;
+}
+
+.payment-section-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.save-button {
+  border: 1px solid currentColor;
+  color: var(--c-text-tertiary);
+  border-radius: 6px;
+  padding: 0.75em 2.5em;
+  background-color: transparent;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.save-button:focus,
+.save-button:hover {
+  color: var(--c-white);
+}
+
+.settings-button {
+  display: flex;
+  align-items: center;
+  color: var(--c-text-tertiary);
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.settings-button i {
+  margin-right: 0.5rem;
+}
+.settings-button:focus,
+.settings-button:hover {
+  color: var(--c-white);
+}
+
+input:focus,
+select:focus,
+a:focus,
+textarea:focus,
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
+}
+
+/*  UPLOAD MENU RENDERING CSS */
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue), 10%, 85%);
+  --fg: hsl(var(--hue), 10%, 5%);
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (20 - 16) * (100vw - 320px) / (2560 - 320));
+}
+body,
+button {
+  font: 1em/1.5 Nunito, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: background-color var(--trans-dur), color var(--trans-dur);
+}
+.modal {
+  background-color: hsl(var(--hue), 10%, 95%);
+  border-radius: 1em;
+  box-shadow: 0 0.75em 1em hsla(var(--hue), 10%, 5%, 0.3);
+  color: hsl(var(--hue), 10%, 5%);
+  width: calc(100% - 3em);
+  max-width: 34.5em;
+  overflow: hidden;
+  position: relative;
+  transition: background-color var(--trans-dur), color var(--trans-dur);
+}
+.modal:before {
+  background-color: hsl(223, 90%, 60%);
+  border-radius: 50%;
+  content: "";
+  filter: blur(60px);
+  opacity: 0.15;
+  position: absolute;
+  top: -8em;
+  right: -15em;
+  width: 25em;
+  height: 25em;
+  z-index: 0;
+  transition: background-color var(--trans-dur);
+}
+.modal__actions {
+  animation-delay: 0.2s;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal__body,
+.modal__header {
+  position: relative;
+  z-index: 1;
+}
+.modal__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em 1.875em 1.875em;
+}
+.modal__button,
+.modal__close-button {
+  color: currentColor;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.modal__button {
+  background-color: hsla(var(--hue), 10%, 50%, 0.2);
+  border-radius: 0.25rem;
+  font-size: 0.75em;
+  padding: 0.5rem 2rem;
+  transition: background-color var(--trans-dur), border-color var(--trans-dur),
+    opacity var(--trans-dur);
+  width: 100%;
+}
+.modal__button + .modal__button {
+  margin-top: 0.75em;
+}
+.modal__button:disabled {
+  opacity: 0.5;
+}
+.modal__button:focus,
+.modal__close-button:focus {
+  outline: transparent;
+}
+.modal__button:hover,
+.modal__button:focus-visible {
+  background-color: hsla(var(--hue), 10%, 60%, 0.2);
+}
+.modal__button--upload {
+  background-color: transparent;
+  border: 0.125rem dashed hsla(var(--hue), 10%, 50%, 0.4);
+  flex: 1;
+  padding: 0.375rem 2rem;
+}
+.modal__col + .modal__col {
+  flex: 1;
+  margin-top: 1.875em;
+}
+.modal__close-button,
+.modal__message,
+.modal__progress-value {
+  color: hsl(var(--hue), 10%, 30%);
+  transition: color var(--trans-dur);
+}
+.modal__close-button {
+  background-color: transparent;
+  display: flex;
+  width: 1.5em;
+  height: 1.5em;
+  transition: color var(--trans-dur);
+}
+.modal__close-button:hover,
+.modal__close-button:focus-visible {
+  color: hsl(var(--hue), 10%, 40%);
+}
+.modal__close-icon {
+  display: block;
+  margin: auto;
+  pointer-events: none;
+  width: 50%;
+  height: auto;
+}
+.modal__content > * {
+  /* don’t use shorthand syntax, or actions delay will be overridden */
+  animation-name: fadeSlideIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.modal__file {
+  flex: 1;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-right: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.modal__file ~ .modal__button {
+  margin-top: 1.5em;
+}
+.modal__file-icon {
+  color: hsl(var(--hue), 10%, 50%);
+  display: block;
+  margin-right: 0.75em;
+  width: 1.5em;
+  height: 1.5em;
+  transition: color var(--trans-dur);
+}
+.modal__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.5em;
+  padding: 0.5em;
+}
+.modal__icon {
+  display: block;
+  margin: auto;
+  width: 2.25em;
+  height: 2.25em;
+}
+.modal__icon--blue g {
+  stroke: hsl(223, 90%, 50%);
+}
+.modal__icon--red g {
+  stroke: hsl(3, 90%, 50%);
+}
+.modal__icon--green g {
+  stroke: hsl(138, 90%, 40%);
+}
+.modal__icon circle,
+.modal__icon line,
+.modal__icon polyline {
+  animation: sdo 0.25s ease-in-out forwards;
+  transition: stroke var(--trans-dur);
+}
+.modal__icon :nth-child(2) {
+  animation-delay: 0.25s;
+}
+.modal__icon :nth-child(3) {
+  animation-delay: 0.5s;
+}
+.modal__icon-sdo10 {
+  stroke-dashoffset: 10;
+}
+.modal__icon-sdo14 {
+  stroke-dashoffset: 14.2;
+}
+.modal__icon-sdo69 {
+  stroke-dashoffset: 69.12;
+  transform: rotate(-90deg);
+  transform-origin: 12px 12px;
+}
+.modal__message {
+  animation-delay: 0.1s;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  min-height: 3em;
+}
+.modal__progress {
+  flex: 1;
+}
+.modal__progress + .modal__button {
+  margin-top: 1.75em;
+}
+.modal__progress-bar {
+  background-image: linear-gradient(
+    90deg,
+    hsl(var(--hue), 90%, 50%),
+    hsl(var(--hue), 90%, 70%)
+  );
+  border-radius: 0.2em;
+  overflow: hidden;
+  width: 100%;
+  height: 0.4em;
+  transform: translate3d(0, 0, 0);
+}
+.modal__progress-fill {
+  background-color: hsl(var(--hue), 10%, 90%);
+  width: inherit;
+  height: inherit;
+  transition: transform 0.1s ease-in-out;
+}
+.modal__progress-value {
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.333;
+  text-align: right;
+}
+.modal__sr {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+.modal__title {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* state change */
+[data-state="2"]:before {
+  background-color: hsl(3, 90%, 60%);
+}
+[data-state="3"]:before {
+  background-color: hsl(138, 90%, 60%);
+}
+.modal__icon + .modal__icon,
+[data-state="1"] .modal__icon:first-child,
+[data-state="2"] .modal__icon:first-child,
+[data-state="3"] .modal__icon:first-child,
+.modal__content + .modal__content,
+[data-state="1"] .modal__content:first-child,
+[data-state="2"] .modal__content:first-child,
+[data-state="3"] .modal__content:first-child {
+  display: none;
+}
+[data-state="1"] .modal__icon:first-child,
+[data-state="2"] .modal__icon:nth-child(2),
+[data-state="3"] .modal__icon:nth-child(3),
+[data-state="1"] .modal__content:nth-child(2),
+[data-state="2"] .modal__content:nth-child(3),
+[data-state="3"] .modal__content:nth-child(4) {
+  display: block;
+}
+[data-ready="false"] .modal__content:first-child .modal__actions:nth-of-type(2),
+[data-ready="true"] .modal__content:first-child .modal__actions:first-of-type {
+  display: none;
+}
+[data-ready="true"] .modal__content:first-child .modal__actions:nth-of-type(2) {
+  display: flex;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 10%, 35%);
+    --fg: hsl(var(--hue), 10%, 95%);
+  }
+  .modal {
+    background-color: hsl(var(--hue), 10%, 10%);
+    color: hsl(var(--hue), 10%, 95%);
+  }
+  .modal__close-button,
+  .modal__message,
+  .modal__progress-value {
+    color: hsl(var(--hue), 10%, 70%);
+  }
+  .modal__close-button:hover,
+  .modal__close-button:focus-visible {
+    color: hsl(var(--hue), 10%, 80%);
+  }
+  .modal__file-icon {
+    color: hsl(var(--hue), 10%, 60%);
+  }
+  .modal__icon--blue g {
+    stroke: hsl(223, 90%, 60%);
+  }
+  .modal__icon--red g {
+    stroke: hsl(3, 90%, 60%);
+  }
+  .modal__icon--green g {
+    stroke: hsl(138, 90%, 60%);
+  }
+  .modal__progress-fill {
+    background-color: hsl(var(--hue), 10%, 20%);
+  }
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(33%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sdo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Beyond mobile */
+@media (min-width: 768px) {
+  .modal__actions--center {
+    justify-content: center;
+    margin-left: -4.125em;
+  }
+  .modal__body {
+    flex-direction: row;
+    align-items: center;
+  }
+  .modal__button {
+    width: auto;
+  }
+  .modal__button + .modal__button {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+  .modal__file ~ .modal__button {
+    margin-top: 0;
+  }
+  .modal__file ~ .modal__close-button {
+    margin-right: 1.5rem;
+  }
+  .modal__progress {
+    margin-right: 2em;
+  }
+  .modal__progress + .modal__button {
+    margin-top: 0;
+  }
+  .modal__col + .modal__col {
+    margin-top: 0;
+    margin-left: 1.875em;
+  }
+  .modal__title {
+    text-align: left;
+  }
+}
+
+/* ?END OF UPLOAD  */
+
+import Image from "next/image";
+import React from "react";
+import Logo from "../../Asset/Images/colan-logo.png";
+import router from "next/router";
+
+const Login = () => {
+  return (
+    <>
+      <div className="header">
+        <div className="inner-header flex">
+          {/* <!-- CARD SECTION  --> */}
+          <div className="card">
+            {/* <form> */}
+            <Image src={Logo} width={200} height={100} alt="" />
+            <div className="textt">
+              <input type="text" placeholder="Enter your email adress here" />
+            </div>
+            <div className="pass">
+              <input type="password" placeholder="Enter your password" />
+            </div>
+            <div className="butn">
+              <button
+                id="butn1"
+                onClick={() => {
+                  router.push("/admin/main");
+                }}
+              >
+                LOGIN
+              </button>
+            </div>
+            <a href="#!">
+              <span
+                id="sp1"
+                style={{
+                  float: "left",
+                  color: "#1491bf",
+                  paddingTop: "15px",
+                }}
+              >
+                SingUp
+              </span>
+            </a>
+            &nbsp;
+            <span
+              style={{
+                float: "left",
+                // color: "#1491bf",
+                paddingTop: "15px",
+              }}
+            >
+              &nbsp;|
+            </span>
+            <a href="#!">
+              <span
+                id="sp2"
+                style={{
+                  float: "left",
+                  color: "#1491bf",
+                  paddingTop: "15px",
+                }}
+              >
+                &nbsp; Forgot password?
+              </span>
+            </a>
+            {/* </form> */}
+          </div>
+        </div>
+        {/* WAVE THERE */}
+
+        {/* WAVE  END THERE */}
+      </div>
+    </>
+  );
+};
+
+export default Login;
+
+
+
+
+
+import Head from "next/head";
+import Script from "next/script";
+import React from "react";
+import tesst from "./test";
+
+const Upload = () => {
+  return (
+    <div>
+      <Script
+        src={tesst}
+        // integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"
+      />
+      <div id="upload" className="modal" data-state="0" data-ready="false">
+        <div className="modal__header">
+          <button className="modal__close-button" type="button">
+            <svg
+              className="modal__close-icon"
+              viewBox="0 0 16 16"
+              width="16px"
+              height="16px"
+              aria-hidden="true"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <polyline points="1,1 15,15" />
+                <polyline points="15,1 1,15" />
+              </g>
+            </svg>
+            <span className="modal__sr">Close</span>
+          </button>
+        </div>
+        <div className="modal__body">
+          <div className="modal__col">
+            {/* <!-- up --> */}
+            <svg
+              className="modal__icon modal__icon--blue"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              aria-hidden="true"
+            >
+              <g
+                fill="none"
+                stroke="hsl(223,90%,50%)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle
+                  className="modal__icon-sdo69"
+                  cx="12"
+                  cy="12"
+                  r="11"
+                  stroke-dasharray="69.12 69.12"
+                />
+                <polyline
+                  className="modal__icon-sdo14"
+                  points="7 12 12 7 17 12"
+                  stroke-dasharray="14.2 14.2"
+                />
+                <line
+                  className="modal__icon-sdo10"
+                  x1="12"
+                  y1="7"
+                  x2="12"
+                  y2="17"
+                  stroke-dasharray="10 10"
+                />
+              </g>
+            </svg>
+            {/* <!-- error --> */}
+            <svg
+              className="modal__icon modal__icon--red"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              aria-hidden="true"
+              display="none"
+            >
+              <g
+                fill="none"
+                stroke="hsl(3,90%,50%)"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <circle
+                  className="modal__icon-sdo69"
+                  cx="12"
+                  cy="12"
+                  r="11"
+                  stroke-dasharray="69.12 69.12"
+                />
+                <line
+                  className="modal__icon-sdo14"
+                  x1="7"
+                  y1="7"
+                  x2="17"
+                  y2="17"
+                  stroke-dasharray="14.2 14.2"
+                />
+                <line
+                  className="modal__icon-sdo14"
+                  x1="17"
+                  y1="7"
+                  x2="7"
+                  y2="17"
+                  stroke-dasharray="14.2 14.2"
+                />
+              </g>
+            </svg>
+            {/* <!-- check --> */}
+            <svg
+              className="modal__icon modal__icon--green"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              aria-hidden="true"
+              display="none"
+            >
+              <g
+                fill="none"
+                stroke="hsl(138,90%,50%)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle
+                  className="modal__icon-sdo69"
+                  cx="12"
+                  cy="12"
+                  r="11"
+                  stroke-dasharray="69.12 69.12"
+                />
+                <polyline
+                  className="modal__icon-sdo14"
+                  points="7 12.5 10 15.5 17 8.5"
+                  stroke-dasharray="14.2 14.2"
+                />
+              </g>
+            </svg>
+          </div>
+          <div className="modal__col">
+            <div className="modal__content">
+              <h2 className="modal__title">Upload a File</h2>
+              <p className="modal__message">
+                Select a file to upload from your computer or device.
+              </p>
+              <div className="modal__actions">
+                <button
+                  className="modal__button modal__button--upload"
+                  type="button"
+                  data-action="file"
+                >
+                  Choose File
+                </button>
+                <input id="file" type="file" hidden />
+              </div>
+              <div className="modal__actions" hidden>
+                <svg
+                  className="modal__file-icon"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  aria-hidden="true"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon points="4 1 12 1 20 8 20 23 4 23" />
+                    <polyline points="12 1 12 8 20 8" />
+                  </g>
+                </svg>
+                <div className="modal__file" data-file></div>
+                <button
+                  className="modal__close-button"
+                  type="button"
+                  data-action="fileReset"
+                >
+                  <svg
+                    className="modal__close-icon"
+                    viewBox="0 0 16 16"
+                    width="16px"
+                    height="16px"
+                    aria-hidden="true"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <polyline points="4,4 12,12" />
+                      <polyline points="12,4 4,12" />
+                    </g>
+                  </svg>
+                  <span className="modal__sr">Remove</span>
+                </button>
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="upload"
+                >
+                  Upload
+                </button>
+              </div>
+            </div>
+            <div className="modal__content" hidden>
+              <h2 className="modal__title">Uploading…</h2>
+              <p className="modal__message">
+                Just give us a moment to process your file.
+              </p>
+              <div className="modal__actions">
+                <div className="modal__progress">
+                  <div className="modal__progress-value" data-progress-value>
+                    0%
+                  </div>
+                  <div className="modal__progress-bar">
+                    <div
+                      className="modal__progress-fill"
+                      data-progress-fill
+                    ></div>
+                  </div>
+                </div>
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="cancel"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+            <div className="modal__content" hidden>
+              <h2 className="modal__title">Oops!</h2>
+              <p className="modal__message">
+                Your file could not be uploaded due to an error. Try uploading
+                it again?
+              </p>
+              <div className="modal__actions modal__actions--center">
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="upload"
+                >
+                  Retry
+                </button>
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="cancel"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+            <div className="modal__content" hidden>
+              <h2 className="modal__title">Upload Successful!</h2>
+              <p className="modal__message">
+                Your file has been uploaded. You can copy the link to your
+                clipboard.
+              </p>
+              <div className="modal__actions modal__actions--center">
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="copy"
+                >
+                  Copy Link
+                </button>
+                <button
+                  className="modal__button"
+                  type="button"
+                  data-action="cancel"
+                >
+                  Done
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Upload;
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const upload = new UploadModal("#upload");
+});
+
+console.log("HELLOW WORLD")
+
+class UploadModal {
+  filename = "";
+  isCopying = false;
+  isUploading = false;
+  progress = 0;
+  progressTimeout = null;
+  state = 0;
+
+  constructor(el) {
+    this.el = document.querySelector(el);
+    this.el?.addEventListener("click", this.action.bind(this));
+    this.el
+      ?.querySelector("#file")
+      ?.addEventListener("change", this.fileHandle.bind(this));
+  }
+  action(e) {
+    this[e.target?.getAttribute("data-action")]?.();
+    this.stateDisplay();
+  }
+  cancel() {
+    this.isUploading = false;
+    this.progress = 0;
+    this.progressTimeout = null;
+    this.state = 0;
+    this.stateDisplay();
+    this.progressDisplay();
+    this.fileReset();
+  }
+  async copy() {
+    const copyButton = this.el?.querySelector("[data-action='copy']");
+
+    if (!this.isCopying && copyButton) {
+      // disable
+      this.isCopying = true;
+      copyButton.style.width = `${copyButton.offsetWidth}px`;
+      copyButton.disabled = true;
+      copyButton.textContent = "Copied!";
+      navigator.clipboard.writeText(this.filename);
+      await new Promise((res) => setTimeout(res, 1000));
+      // reenable
+      this.isCopying = false;
+      copyButton.removeAttribute("style");
+      copyButton.disabled = false;
+      copyButton.textContent = "Copy Link";
+    }
+  }
+  fail() {
+    this.isUploading = false;
+    this.progress = 0;
+    this.progressTimeout = null;
+    this.state = 2;
+    this.stateDisplay();
+  }
+  file() {
+    this.el?.querySelector("#file").click();
+  }
+  fileDisplay(name = "") {
+    // update the name
+    this.filename = name;
+
+    const fileValue = this.el?.querySelector("[data-file]");
+    if (fileValue) fileValue.textContent = this.filename;
+
+    // show the file
+    this.el?.setAttribute("data-ready", this.filename ? "true" : "false");
+  }
+  fileHandle(e) {
+    return new Promise(() => {
+      const { target } = e;
+      if (target?.files.length) {
+        let reader = new FileReader();
+        reader.onload = (e2) => {
+          this.fileDisplay(target.files[0].name);
+        };
+        reader.readAsDataURL(target.files[0]);
+      }
+    });
+  }
+  fileReset() {
+    const fileField = this.el?.querySelector("#file");
+    if (fileField) fileField.value = null;
+
+    this.fileDisplay();
+  }
+  progressDisplay() {
+    const progressValue = this.el?.querySelector("[data-progress-value]");
+    const progressFill = this.el?.querySelector("[data-progress-fill]");
+    const progressTimes100 = Math.floor(this.progress * 100);
+
+    if (progressValue) progressValue.textContent = `${progressTimes100}%`;
+    if (progressFill)
+      progressFill.style.transform = `translateX(${progressTimes100}%)`;
+  }
+  async progressLoop() {
+    this.progressDisplay();
+
+    if (this.isUploading) {
+      if (this.progress === 0) {
+        await new Promise((res) => setTimeout(res, 1000));
+        // fail randomly
+        if (!this.isUploading) {
+          return;
+        } else if (Utils.randomInt(0, 2) === 0) {
+          this.fail();
+          return;
+        }
+      }
+      // …or continue with progress
+      if (this.progress < 1) {
+        this.progress += 0.01;
+        this.progressTimeout = setTimeout(this.progressLoop.bind(this), 50);
+      } else if (this.progress >= 1) {
+        this.progressTimeout = setTimeout(() => {
+          if (this.isUploading) {
+            this.success();
+            this.stateDisplay();
+            this.progressTimeout = null;
+          }
+        }, 250);
+      }
+    }
+  }
+  stateDisplay() {
+    this.el?.setAttribute("data-state", `${this.state}`);
+  }
+  success() {
+    this.isUploading = false;
+    this.state = 3;
+    this.stateDisplay();
+  }
+  upload() {
+    if (!this.isUploading) {
+      this.isUploading = true;
+      this.progress = 0;
+      this.state = 1;
+      this.progressLoop();
+    }
+  }
+}
+
+class Utils {
+  static randomInt(min = 0, max = 2 ** 32) {
+    const percent = crypto.getRandomValues(new Uint32Array(1))[0] / 2 ** 32;
+    const relativeValue = (max - min) * percent;
+
+    return Math.round(min + relativeValue);
+  }
+}

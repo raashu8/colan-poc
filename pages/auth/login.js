@@ -3,74 +3,64 @@ import React from "react";
 import Logo from "../../Asset/Images/colan-logo.png";
 import router from "next/router";
 
-const Login = () => {
+const NewLogin = () => {
   return (
     <>
-      <div className="header">
-        <div className="inner-header flex">
-          {/* <!-- CARD SECTION  --> */}
-          <div className="card">
-            {/* <form> */}
-            <Image src={Logo} width={200} height={100} alt="" />
-            <div className="textt">
-              <input type="text" placeholder="Enter your email adress here" />
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="context">
+        <div className="login-body">
+          <div class="login-card">
+            <Image src={Logo} width={300} height={100} alt="" />
+            <h2>Login</h2>
+            <h3>Enter your credentials</h3>
+            {/* <form class="login-form"> */}
+            <div class="username">
+              <input
+                spellcheck="false"
+                class="control"
+                type="text"
+                placeholder="Username"
+                onkeyup="handleChange(event)"
+                onkeydown="handleStartTyping()"
+              />
+              <div id="spinner" class="spinner"></div>
             </div>
-            <div className="pass">
-              <input type="password" placeholder="Enter your password" />
-            </div>
-            <div className="butn">
-              <button
-                id="butn1"
-                onClick={() => {
-                  router.push("/admin/main");
-                }}
-              >
-                LOGIN
-              </button>
-            </div>
-            <a href="#!">
-              <span
-                id="sp1"
-                style={{
-                  float: "left",
-                  color: "#1491bf",
-                  paddingTop: "15px",
-                }}
-              >
-                SingUp
-              </span>
-            </a>
-            &nbsp;
-            <span
-              style={{
-                float: "left",
-                // color: "#1491bf",
-                paddingTop: "15px",
+            <input
+              spellcheck="false"
+              class="control"
+              id="password"
+              type="password"
+              placeholder="Password"
+            />
+            <button
+              className="sign-btn"
+              onClick={() => {
+                router.push("/admin/main");
               }}
             >
-              &nbsp;|
-            </span>
-            <a href="#!">
-              <span
-                id="sp2"
-                style={{
-                  float: "left",
-                  color: "#1491bf",
-                  paddingTop: "15px",
-                }}
-              >
-                &nbsp; Forgot password?
-              </span>
-            </a>
+              Login
+            </button>
             {/* </form> */}
           </div>
         </div>
-        {/* WAVE THERE */}
-
-        {/* WAVE  END THERE */}
+        {/* <h1>Pure Css Animated Background</h1> */}
       </div>
     </>
   );
 };
 
-export default Login;
+export default NewLogin;
+
