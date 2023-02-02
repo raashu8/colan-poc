@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.7",
+    "@mui/styled-engine-sc": "^5.11.0",
     "@next/font": "13.1.6",
+    "bootstrap-icons": "^1.10.2",
+    "bootstrap-next": "^1.0.5",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "bootstrap-icons": "^1.10.2",
+    "react-bootstrap": "^2.7.0",
     "react-bootstrap-icons": "^1.10.2",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6"
   }
 }

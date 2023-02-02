@@ -1,0 +1,7 @@
+.navbarbgcolor{
+  background-color: #5155c4 !important;
+}
+.dropdown-menu[data-bs-popper] {
+
+  right: 0 !important;
+}
