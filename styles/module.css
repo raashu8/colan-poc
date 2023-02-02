@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-font-family: 'Rubik', sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .context {
@@ -255,7 +255,6 @@ font-family: 'Rubik', sans-serif;
   transition: all 0.375s;
   width: 80%;
   font-size: 1.1rem;
-
 }
 
 .username {
@@ -297,4 +296,34 @@ font-family: 'Rubik', sans-serif;
 
 .alert.visible {
   height: 32px;
+}
+
+#File-Body > #File-For {
+  display: none;
+}
+
+#Filebutton {
+  width: 310px;
+  /* height: 35vh; */
+  border: 1px solid;
+  border-radius: 2px;
+  text-align: center;
+  border: none;
+}
+
+#File-Body {
+  width: 300px;
+  /* height: 30px; */
+}
+.input-hover:hover {
+  cursor: pointer;
+}
+.upld-btn {
+  margin-top: 26px;
+  background-color: #1e51dc;
+  border-radius: 9px;
+  padding: 7px !important;
+  width: 159px;
+  border: none !important;
+  color: white;
 }

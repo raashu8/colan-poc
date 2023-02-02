@@ -1,14 +1,9 @@
-import Sidenav from 'Asset/layout/sidenav';
+import Sidenav from "Asset/layout/sidenav";
 
-import React from 'react'
+import React from "react";
 
 const Main = () => {
-  return (
- 
-    
-    
-   <Sidenav/>
-  )
-}
+  return <Sidenav />;
+};
 
-export default Main
+export default Main;
