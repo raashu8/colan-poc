@@ -63,4 +63,3 @@ const NewLogin = () => {
 };
 
 export default NewLogin;
-
