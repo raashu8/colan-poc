@@ -341,12 +341,12 @@ body {
   font-size: 12px;
 }
 .dashbord-bar-active span.ico-left {
-  color:#1c12f9;
+  color: #1c12f9;
 }
 .dashbord-bar-active {
   border-right: 4px solid blue;
   background-color: #f4f7fe;
-  color:black;
+  color: black;
   font-weight: 600;
 }
 .trans {
@@ -356,3 +356,20 @@ body {
   transition: 2s;
 }
 
+.scroll-Effect {
+  background-color: #d9e4ff70 !important;
+  backdrop-filter: blur(17px) !important;
+  transition: 0.3s !important;
+  width: 86% !important;
+  margin-right: 13px !important;
+  margin-top: 10px !important;
+  border-radius: 17px !important;
+}
+.non-effect {
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  transition: 0.5s;
+  margin-right: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+}

@@ -22,12 +22,14 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { mainRoute } from "routes";
 import { useRouter } from "next/router";
-import { Card } from "@mui/material";
+import { Card, createMuiTheme } from "@mui/material";
+import ScrollToColor01 from "./scrollEffect";
+import { ThemeProvider } from "@material-ui/core";
 
 const drawerWidth = 240;
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: 'theme.shape.borderRadius',
+  borderRadius: "theme.shape.borderRadius",
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -37,7 +39,7 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
-    borderRadius:'24px',
+    borderRadius: "24px",
   },
 }));
 
@@ -49,15 +51,13 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    fontSize:'12px',
-   
+    fontSize: "12px",
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
@@ -66,7 +66,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       width: "18ch",
       "&:focus": {
         width: "20ch",
-       
       },
     },
   },
@@ -82,6 +81,7 @@ function MainLayout({ children, title }, props) {
   const routeHandler = (e) => {
     router.push(e);
   };
+  const theme = createMuiTheme();
   const drawer = (
     <div className="trans">
       <Image
@@ -101,12 +101,9 @@ function MainLayout({ children, title }, props) {
                 router.pathname.indexOf(e.path) !== -1
                   ? "dashbord-bar-active"
                   : "dashbord-bar"
-                  
               }
-  
             >
-
-              <span className="ico-left" >{e.icon}</span>
+              <span className="ico-left">{e.icon}</span>
               <span className="mar-lef" style={{ fontSize: "14px" }}>
                 {e.name}
               </span>
@@ -137,7 +134,69 @@ function MainLayout({ children, title }, props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <ScrollToColor01>
+          <AppBar
+            position="fixed"
+            sx={{
+              backgroundColor: "transparent",
+              boxShadow: "none",
+              width: { sm: `calc(100% - ${drawerWidth}px)` },
+              ml: { sm: `${drawerWidth}px` },
+            }}
+          >
+            <Toolbar
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: "none" }, color: "#1c12f9" }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ color: "black" }}
+              >
+                {title} Dashboard
+              </Typography>
+              <Card sx={{ padding: "10px", display: "flex" }}>
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  edge="start"
+                  onClick={handleDrawerToggle}
+                  sx={{ mr: 2, display: { sm: "none" }, color: "#1c12f9" }}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Search>
+                  <SearchIconWrapper>
+                    <SearchIcon
+                      sx={{ color: "black", zIndex: "9", fontSize: "16px" }}
+                    />
+                  </SearchIconWrapper>
+                  <StyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ "aria-label": "search" }}
+                    sx={{ backgroundColor: "#f4f7fe", color: "grey" }}
+                  />
+                </Search>
+              </Card>
+            </Toolbar>
+          </AppBar>
+        </ScrollToColor01>
+      </ThemeProvider>
+      {/* <AppBar
         position="fixed"
         sx={{
           backgroundColor: "transparent",
@@ -146,15 +205,22 @@ function MainLayout({ children, title }, props) {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between",background:"#d9e4ff70",backdropFilter:'blur(20px)' }}>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            background: "#d9e4ff70",
+            backdropFilter: "blur(20px)",
+          }}
+        >
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "#1c12f9" }}
           >
-            <MenuIcon sx={{color:'#1c12f9'}} />
+            <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
@@ -164,22 +230,22 @@ function MainLayout({ children, title }, props) {
           >
             {title} Dashboard
           </Typography>
-          <Card sx={{padding:'10px'}}>
-          <Search sx={{}}>
-            <SearchIconWrapper>
-              <SearchIcon sx={{ color: "black",zIndex:"9",fontSize:"16px" }} />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              sx={{ backgroundColor: "#f4f7fe",color:'grey' }}
-            />
-          </Search>
-
+          <Card sx={{ padding: "10px" }}>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon
+                  sx={{ color: "black", zIndex: "9", fontSize: "16px" }}
+                />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+                sx={{ backgroundColor: "#f4f7fe", color: "grey" }}
+              />
+            </Search>
           </Card>
-         
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
