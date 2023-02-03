@@ -62,6 +62,7 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Card>
+  
     </div>
   );
 };
