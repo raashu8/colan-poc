@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Sidenav from "./sidenav";
 
-function MainLayout({ children }) {
+function MainLayout({ children , title }) {
   return (
     <>
-      <Sidenav />
+      <Sidenav heading={title}/>
       {children}
     </>
   );
