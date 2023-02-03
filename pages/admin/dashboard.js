@@ -41,7 +41,7 @@ const Dashboard = () => {
           borderRadius: 5,
           p: 5,
           maxHeight: "100%",
-          margin: "0 auto"
+          margin: "0 auto",
         }}
       >
         <Grid container>
@@ -86,7 +86,7 @@ const Dashboard = () => {
                   setButtoun(true);
                 }}
                 type="file"
-                accept="text/xml"
+                // accept="text/xml"
               />
             </div>
           </Grid>
@@ -114,7 +114,6 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Card>
-    
     </div>
   );
 };

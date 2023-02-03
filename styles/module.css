@@ -347,6 +347,7 @@ body {
   border-right: 4px solid blue;
   background-color: #f4f7fe;
   color: black;
+  padding: 16px !important;
   font-weight: 600;
 }
 .trans {
@@ -372,4 +373,9 @@ body {
   margin-right: 0px;
   margin-top: 0px;
   border-radius: 0px;
+}
+.crd-shad {
+  -webkit-box-shadow: 0px -1px 35px -8px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px -1px 35px -8px rgba(0, 0, 0, 0.73);
+  box-shadow: 0px -1px 35px -8px rgba(0, 0, 0, 0.73);
 }

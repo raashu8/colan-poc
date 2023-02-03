@@ -18,6 +18,8 @@ const ScrollHandler = (props) => {
       marginRight: trigger ? "13px" : "0px",
       marginTop: trigger ? "10px" : "0px",
       borderRadius: trigger ? "17px" : "0px",
+      top: trigger ? "0px" : "10px",
+      marginBottom :"20px"
     },
   });
 };

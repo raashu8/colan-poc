@@ -22,9 +22,11 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { mainRoute } from "routes";
 import { useRouter } from "next/router";
-import { Card, createMuiTheme } from "@mui/material";
+import { Avatar, Card, createMuiTheme } from "@mui/material";
 import ScrollToColor01 from "./scrollEffect";
 import { ThemeProvider } from "@material-ui/core";
+import { UilInfoCircle } from "@iconscout/react-unicons";
+import { UilMoon } from "@iconscout/react-unicons";
 
 const drawerWidth = 240;
 const Search = styled("div")(({ theme }) => ({
@@ -169,28 +171,44 @@ function MainLayout({ children, title }, props) {
               >
                 {title} Dashboard
               </Typography>
-              <Card sx={{ padding: "10px", display: "flex" }}>
-                <IconButton
-                  color="inherit"
-                  aria-label="open drawer"
-                  edge="start"
-                  onClick={handleDrawerToggle}
-                  sx={{ mr: 2, display: { sm: "none" }, color: "#1c12f9" }}
-                >
-                  <MenuIcon />
-                </IconButton>
+              <Card sx={{ padding: "10px", display: "flex", borderRadius: 12 }} className="crd-shad">
                 <Search>
-                  <SearchIconWrapper>
+                  <SearchIconWrapper sx={{}}>
                     <SearchIcon
-                      sx={{ color: "black", zIndex: "9", fontSize: "16px" }}
+                      sx={{
+                        color: "black",
+                        zIndex: "9",
+                        fontSize: "16px",
+                      }}
                     />
                   </SearchIconWrapper>
                   <StyledInputBase
                     placeholder="Search…"
                     inputProps={{ "aria-label": "search" }}
-                    sx={{ backgroundColor: "#f4f7fe", color: "grey" }}
+                    sx={{
+                      backgroundColor: "#f4f7fe",
+                      color: "grey",
+                      borderRadius: 5,
+                    }}
                   />
                 </Search>
+                <IconButton sx={{ p: 0, color: "#1c12f9", ml: 0.9 }}>
+                  <UilInfoCircle />
+                </IconButton>
+                {/* <IconButton sx={{ p: 0, color: "#1c12f9", ml: 0.9 }}>
+                  <UilMoon />
+                </IconButton> */}
+                <Avatar
+                  sx={{
+                    bgcolor: "#160877",
+                    width: "32px",
+                    height: "31px",
+                    fontSize: "12px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  OP
+                </Avatar>
               </Card>
             </Toolbar>
           </AppBar>
@@ -290,6 +308,7 @@ function MainLayout({ children, title }, props) {
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
+          mt: 4,
         }}
       >
         <Toolbar />
