@@ -1,4 +1,4 @@
-import MainLayout from "Asset/layout/mainLayout";
+import MainLayout from "Asset/layout/Layout";
 import React from "react";
 
 const Cloud = () => {

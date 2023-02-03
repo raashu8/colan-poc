@@ -65,7 +65,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-function Sidenav(props) {
+function MainLayout({ children, title }, props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const router = useRouter();
@@ -143,7 +143,7 @@ function Sidenav(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
           >
             <MenuIcon />
           </IconButton>
@@ -153,7 +153,7 @@ function Sidenav(props) {
             component="div"
             sx={{ color: "black" }}
           >
-            {props.heading} Dashboard
+            {title} Dashboard
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -214,16 +214,17 @@ function Sidenav(props) {
         }}
       >
         <Toolbar />
+        {children}
       </Box>
     </Box>
   );
 }
 
-Sidenav.propTypes = {
+MainLayout.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
 };
 
-export default Sidenav;
+export default MainLayout;

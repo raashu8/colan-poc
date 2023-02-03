@@ -1,4 +1,4 @@
-import MainLayout from "Asset/layout/mainLayout";
+import MainLayout from "Asset/layout/Layout";
 import React from "react";
 
 const Marketplace = () => {
@@ -6,4 +6,6 @@ const Marketplace = () => {
 };
 
 export default Marketplace;
-Marketplace.getLayout = (page) => <MainLayout title={"Marketplace"}>{page}</MainLayout>;
+Marketplace.getLayout = (page) => (
+  <MainLayout title={"Marketplace"}>{page}</MainLayout>
+);
