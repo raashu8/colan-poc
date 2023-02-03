@@ -9,7 +9,7 @@ import UploadImage from "../../Asset/Images/aa.png";
 import Image from "next/image";
 import MainLayout from "Asset/layout/mainLayout";
 
-const UploadCard = () => {
+const Dashboard = () => {
   return (
     <div style={{ padding: "200px", paddingTop: "20px", marginLeft: "60px" }}>
       <Card
@@ -66,5 +66,7 @@ const UploadCard = () => {
   );
 };
 
-export default UploadCard;
-UploadCard.getLayout = (page) => <MainLayout>{page}</MainLayout>;
+export default Dashboard;
+Dashboard.getLayout = (page) => (
+  <MainLayout title={"Main"}>{page}</MainLayout>
+);

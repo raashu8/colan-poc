@@ -8,6 +8,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   font-family: "Rubik", sans-serif;
+  transition: 0.5s;
 }
 
 .context {
@@ -326,4 +327,25 @@ body {
   width: 159px;
   border: none !important;
   color: white;
+}
+.dashbord-bar {
+  /* padding: 10px !important; */
+  padding: 16px !important;
+}
+.mar-lef {
+  margin-left: 20px !important;
+}
+.ico-left {
+  margin-left: 10px;
+}
+
+.dashbord-bar-active {
+  border-right: 4px solid blue;
+  padding-left: 30px;
+}
+.trans {
+  transition-timing-function: ease;
+}
+.trans {
+  transition: 2s;
 }
