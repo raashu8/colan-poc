@@ -22,11 +22,12 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { mainRoute } from "routes";
 import { useRouter } from "next/router";
+import { Card } from "@mui/material";
 
 const drawerWidth = 240;
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: 'theme.shape.borderRadius',
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -36,6 +37,7 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
+    borderRadius:'24px',
   },
 }));
 
@@ -47,20 +49,24 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
+    fontSize:'12px',
+   
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("sm")]: {
-      width: "12ch",
+      width: "18ch",
       "&:focus": {
         width: "20ch",
+       
       },
     },
   },
@@ -95,9 +101,12 @@ function MainLayout({ children, title }, props) {
                 router.pathname.indexOf(e.path) !== -1
                   ? "dashbord-bar-active"
                   : "dashbord-bar"
+                  
               }
+  
             >
-              <span className="ico-left">{e.icon}</span>
+
+              <span className="ico-left" >{e.icon}</span>
               <span className="mar-lef" style={{ fontSize: "14px" }}>
                 {e.name}
               </span>
@@ -137,7 +146,7 @@ function MainLayout({ children, title }, props) {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between",background:"#d9e4ff70",backdropFilter:'blur(20px)' }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -145,7 +154,7 @@ function MainLayout({ children, title }, props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{color:'#1c12f9'}} />
           </IconButton>
           <Typography
             variant="h6"
@@ -155,16 +164,20 @@ function MainLayout({ children, title }, props) {
           >
             {title} Dashboard
           </Typography>
-          <Search>
+          <Card sx={{padding:'10px'}}>
+          <Search sx={{}}>
             <SearchIconWrapper>
-              <SearchIcon sx={{ color: "red" }} />
+              <SearchIcon sx={{ color: "black",zIndex:"9",fontSize:"16px" }} />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
-              sx={{ backgroundColor: "white" }}
+              sx={{ backgroundColor: "#f4f7fe",color:'grey' }}
             />
           </Search>
+
+          </Card>
+         
         </Toolbar>
       </AppBar>
       <Box

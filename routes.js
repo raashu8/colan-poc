@@ -2,12 +2,13 @@ import { UilEstate } from "@iconscout/react-unicons";
 import { UilCloudLock } from "@iconscout/react-unicons";
 import { UilChartGrowth } from "@iconscout/react-unicons";
 import { UilUserCircle } from "@iconscout/react-unicons";
+import HomeIcon from '@mui/icons-material/Home';
 
 export const mainRoute = [
   {
     name: "Dashboard",
     path: "/admin/dashboard",
-    icon: <UilEstate />,
+    icon: <HomeIcon   />,
   },
   {
     name: "Marketplace",

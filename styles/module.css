@@ -331,17 +331,23 @@ body {
 .dashbord-bar {
   /* padding: 10px !important; */
   padding: 16px !important;
+  color: #8f9bba;
 }
 .mar-lef {
   margin-left: 20px !important;
 }
 .ico-left {
   margin-left: 10px;
+  font-size: 12px;
 }
-
+.dashbord-bar-active span.ico-left {
+  color:#1c12f9;
+}
 .dashbord-bar-active {
   border-right: 4px solid blue;
-  padding-left: 30px;
+  background-color: #f4f7fe;
+  color:black;
+  font-weight: 600;
 }
 .trans {
   transition-timing-function: ease;
