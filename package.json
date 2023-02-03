@@ -16,8 +16,6 @@
     "@mui/material": "^5.11.7",
     "@mui/styled-engine-sc": "^5.11.0",
     "@next/font": "13.1.6",
-    "bootstrap-icons": "^1.10.2",
-    "bootstrap-next": "^1.0.5",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",

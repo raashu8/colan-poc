@@ -1,17 +1,22 @@
 import * as React from "react";
-import { Grid, CardContent, Typography, Card } from "@mui/material";
+// import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import UploadImage from "../../Asset/Images/aa.png";
 import Image from "next/image";
 import MainLayout from "Asset/layout/mainLayout";
 
 const UploadCard = () => {
   return (
-    <div style={{ padding: "200px", paddingTop:"20px", marginLeft:"60px"}}>
+    <div style={{ padding: "200px", paddingTop: "20px", marginLeft: "60px" }}>
       <Card
         sx={{
           maxWidth: 700,
           borderRadius: "15px",
-          p: 5,  
+          p: 5,
           maxHeight: "100%",
         }}
       >

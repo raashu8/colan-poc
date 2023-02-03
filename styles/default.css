@@ -8,6 +8,7 @@
 body {
   font-family: 'DM Sans', sans-serif;
 font-family: 'Rubik', sans-serif;
+background-color: #f4f7fe;
 }
 .css-1a4d6jd-MuiTypography-root {
   font-family: 'DM Sans', sans-serif;
@@ -15,4 +16,7 @@ font-family: 'Rubik', sans-serif;
 }
 .css-10hburv-MuiTypography-root{
   font-family: 'DM Sans', sans-serif;
+}
+.icon {
+  color: 'red',
 }

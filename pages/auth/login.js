@@ -48,7 +48,7 @@ const NewLogin = () => {
             <button
               className="sign-btn"
               onClick={() => {
-                router.push("/admin/main");
+                router.push("/admin/upload");
               }}
             >
               Login
