@@ -6,8 +6,8 @@ import router from "next/router";
 const NewLogin = () => {
   return (
     <>
-      <div class="area">
-        <ul class="circles">
+      <div className="area">
+        <ul className="circles">
           <li></li>
           <li></li>
           <li></li>
@@ -20,27 +20,27 @@ const NewLogin = () => {
           <li></li>
         </ul>
       </div>
-      <div class="context">
+      <div className="context">
         <div className="login-body">
-          <div class="login-card">
+          <div className="login-card">
             <Image src={Logo} width={300} height={100} alt="" />
             <h2>Login</h2>
             <h3>Enter your credentials</h3>
-            {/* <form class="login-form"> */}
-            <div class="username">
+            {/* <form className="login-form"> */}
+            <div className="username">
               <input
-                spellcheck="false"
-                class="control"
+                // spellcheck="false"
+                className="control"
                 type="text"
                 placeholder="Username"
-                onkeyup="handleChange(event)"
-                onkeydown="handleStartTyping()"
+                // onkeyup="handleChange(event)"
+                // onKeyDown="handleStartTyping()"
               />
-              <div id="spinner" class="spinner"></div>
+              <div id="spinner" className="spinner"></div>
             </div>
             <input
-              spellcheck="false"
-              class="control"
+              // spellcheck="false"
+              className="control"
               id="password"
               type="password"
               placeholder="Password"
