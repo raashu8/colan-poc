@@ -1,11 +1,15 @@
 import MainLayout from "Asset/layout/Layout";
+import Head from "next/head";
 import React from "react";
 
 const Marketplace = () => {
   return (
     <div>
+      <Head>
+        <title>Marketplace</title>
+      </Head>
       Marketplace
-      <h3>TEST SCROLL BAR HERE</h3> 
+      <h3>TEST SCROLL BAR HERE</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quis fuga
         tempora unde accusantium id perspiciatis porro totam aliquid culpa, in

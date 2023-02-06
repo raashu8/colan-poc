@@ -5,13 +5,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -27,6 +22,8 @@ import ScrollToColor01 from "./scrollEffect";
 import { ThemeProvider } from "@material-ui/core";
 import { UilInfoCircle } from "@iconscout/react-unicons";
 import { UilMoon } from "@iconscout/react-unicons";
+import Popover from "@mui/material/Popover";
+import Link from "next/link";
 
 const drawerWidth = 240;
 const Search = styled("div")(({ theme }) => ({
@@ -76,6 +73,17 @@ function MainLayout({ children, title }, props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const router = useRouter();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
+  const handleOpenPopover = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClosePopover = () => {
+    setAnchorEl(null);
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -171,7 +179,10 @@ function MainLayout({ children, title }, props) {
               >
                 {title} Dashboard
               </Typography>
-              <Card sx={{ padding: "10px", display: "flex", borderRadius: 12 }} className="crd-shad">
+              <Card
+                sx={{ padding: "10px", display: "flex", borderRadius: 12 }}
+                className="crd-shad"
+              >
                 <Search>
                   <SearchIconWrapper sx={{}}>
                     <SearchIcon
@@ -206,9 +217,44 @@ function MainLayout({ children, title }, props) {
                     fontSize: "12px",
                     marginLeft: "10px",
                   }}
+                  onClick={handleOpenPopover}
+                  className="avatr-hoover"
                 >
                   OP
                 </Avatar>
+                <Popover
+                  id={id}
+                  open={open}
+                  anchorEl={anchorEl}
+                  onClose={handleClosePopover}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  className="poper"
+                  sx={{ mt: 2 }}
+                >
+                  <Typography sx={{ p: 2 }}>👋 Hey, Adela</Typography>
+                  <Divider sx={{ background: "black" }} />
+
+                  <ol class="v">
+                    <li>
+                      <a href="https://colaninfotech.com/" className="homer">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://colaninfotech.com/" className="homer">
+                        Cloud setting
+                      </a>
+                    </li>
+                    <li>
+                      <a href={"/auth/login"}>
+                        <span style={{ color: "red" }}> Logout</span>
+                      </a>
+                    </li>
+                  </ol>
+                </Popover>
               </Card>
             </Toolbar>
           </AppBar>

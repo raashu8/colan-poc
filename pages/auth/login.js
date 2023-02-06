@@ -2,10 +2,14 @@ import Image from "next/image";
 import React from "react";
 import Logo from "../../Asset/Images/colan-logo.png";
 import router from "next/router";
+import Head from "next/head";
 
 const NewLogin = () => {
   return (
     <>
+      <Head>
+        <title>Login</title>
+      </Head>
       <div className="area">
         <ul className="circles">
           <li></li>

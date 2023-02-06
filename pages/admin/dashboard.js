@@ -9,6 +9,7 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { TextField } from "@mui/material";
 import MainLayout from "Asset/layout/Layout";
+import Head from "next/head";
 
 const Dashboard = () => {
   const [buttoun, setButtoun] = useState(false);
@@ -35,6 +36,9 @@ const Dashboard = () => {
     <div
       style={{ paddingTop: "20px", textAlign: "center", alignItems: "center" }}
     >
+      <Head>
+        <title>Dashboard</title>
+      </Head>
       <Card
         sx={{
           maxWidth: 700,
