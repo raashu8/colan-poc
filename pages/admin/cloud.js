@@ -5,7 +5,7 @@ import React from "react";
 const Cloud = () => {
   return <div>
       <Head>
-        <title>Cloud Servicexzdxdsdsdsdsds</title>
+        <title>Cloud Services</title>
       </Head>
     Cloud</div>;
 };
