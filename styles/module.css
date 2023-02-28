@@ -398,8 +398,8 @@ ol.v {
 ol.v li {
   margin: 10px 3px;
 }
-.v:hover{
-cursor: pointer;
+.v:hover {
+  cursor: pointer;
 }
 .homer {
   padding: 25px 0px !important;
