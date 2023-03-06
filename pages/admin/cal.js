@@ -33,7 +33,7 @@ const Calculator = () => {
       setOperator(operatorValue);
     }
   };
-       
+      //  shfshidfsdfsd
   const handleEquals = () => {
     if (operator === "+") {
       setCurrentInput(Number(previousInput) + Number(currentInput));
